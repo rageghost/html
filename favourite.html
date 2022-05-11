@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Foods WebApp</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        color: green;
+        padding: 20px;
+      }
+      nav {
+        background-color: rgb(0, 128, 28);
+        display: grid;
+        place-items: center;
+      }
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul a {
+        display: inline-block;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      nav ul a:hover {
+        background-color: rgb(0, 128, 11);
+        color: white;
+      }
+      h2 {
+        padding: 15px;
+        margin-left: 20px;
+        color: black;
+      }
+      .menu-items {
+        padding: 10px;
+        margin-left: 50px;
+        color: #2aa21a;
+      }
+      .menu-items a {
+        text-decoration: none;
+        font-size: 19px;
+        font-weight: bold;
+        color: #70a21a;
+        background-color: white;
+      }
+      .items {
+        /* display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 30px 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 30px; */
+        padding: 20px;
+        text-align: center;
+      }
+      .item img {
+        padding: 15px;
+        width: 620px;
+        height: 520px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .item img:hover {
+        transform: scale(1.04);
+      }
+      .item h3 {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .item button {
+        padding: 5px 30px;
+        border: none;
+        outline: none;
+        background-color: rgb(21, 224, 21);
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 15px;
+        display: block;
+        margin: 0 auto;
+      }
+      .item button:hover {
+        transform: scale(1.08);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Favorite Foods WebApp</h1>
+    <!-- Nav bar section -->
+    <div>
+      <nav>
+        <ul>
+          <a href=""><li>Index</li></a>
+          <a href=""><li>food</li></a>
+          <a href=""><li>About</li></a>
+          <a href=""><li>Products</li></a>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Menu Items -->
+    <h2> Favorite Foods</h2>
+    <div class="menu-items">
+      <ul>
+        <li><a href="#PAROTTA">PAROTTA</a></li>
+        <li><a href="#TOMATO RICE">TOMATO RICE</a></li>
+        <li><a href="#CHICKEN BIRYANI">CHICKEN BIRYANI</a></li>
+        <li><a href="#MUTTON BIRYANI">MUTTON BIRYANI </a></li>
+        <li><a href="#KERALA PUTTU">KERALA PUTTU </a></li>
+        <li><a href="#IDIYAPPAM">IDIYAPPAM</a></li>
+        <li><a href="#MUTTA PAROTTA">MUTTA PAROTTA</a></li>
+        <li><a href="#DOSA">DOSA</a></li>
+        <li><a href="#IDLI">IDLI</a></li>
+      </ul>
+    </div>
+
+    <!-- Food Items List Section -->
+    <div class="items">
+      <div class="item" id="PAROTTA">
+        <img
+          src="https://media.istockphoto.com/photos/famous-asian-flat-bread-known-as-parathas-picture-id618764348?s=612x612"
+          alt="PAROTTA"
+        />
+        <h3>PAROTTA</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="TOMATO RICE">
+        <img
+          src="http://4.bp.blogspot.com/-Wt_eGZS5Mkk/UMknxhMPJnI/AAAAAAAAGa8/gJhIFfNZ9tc/s1600/IMG_0054.JPG"
+          alt="TOMATO RICE"
+        />
+        <h3>TOMATO RICE</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="CHICKEN BIRYANI">
+        <img
+          src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?cs=srgb&dl=pexels-rajesh-tp-1624487.jpg&fm=jpg"
+          alt="Rava Upma"
+        />
+        <h3>CHICKEN BIRYANI</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="MUTTON BIRYANI">
+        <img
+          src="https://media.istockphoto.com/photos/mutton-gosht-biryani-picture-id469866881?s=612x612"
+          alt="MUTTON BIRYANI"
+        />
+        <h3>MUTTON BIRYANI</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="KERALA PUTTU">
+        <img
+          src="https://media.istockphoto.com/photos/south-indian-breakfast-puttu-kerala-india-picture-id806863994?s=612x612"
+          alt="Onion Rava Dosa"
+        />
+        <h3>KERALA PUTTU</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="IDIYAPPAM">
+        <img
+          src="https://untolddelicacy.com/wp-content/uploads/2021/08/Idiyappam-Kerala-Recipe.jpg"
+          alt="IDIYAPPAM"
+        />
+        <h3>IDIYAPPAM</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="MUTTA PAROTTA">
+        <img
+          src="https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2013/06/img_4397.jpg?resize=640%2C480&ssl=1"
+          alt="MUTTA PAROTTA"
+        />
+        <h3>MUTTA PAROTTA</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="DOSA">
+        <img
+          src="https://image.shutterstock.com/image-photo/south-indian-breakfast-masala-dosa-600w-1775261957.jpg"
+          alt="DOSA"
+        />
+        <h3>DOSA</h3>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="item" id="IDLI">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/06/16/11/38/breakfast-2408818_960_720.jpg"
+          alt="IDLI"
+        />
+        <h3>IDLI</h3>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </body>
+</html>
